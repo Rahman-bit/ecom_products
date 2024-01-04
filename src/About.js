@@ -3,7 +3,8 @@ import HeroSection from './components/HeroSection'
 
 const About = () => {
   const heroTitle = {
-    name : 'About Possible'
+    name : 'Rahman S',
+    img : 'images/Sayyed.jpeg'
   }
   return (
     <div>

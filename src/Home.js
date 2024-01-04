@@ -9,7 +9,8 @@ import Trusted from './components/Trusted';
 // import UseMemoHook from './InterViewQua/UseMemoHook'
 const Home = () => {
     const heroTitle = {
-        name : 'Possible'
+        name : 'Possible',
+        img : 'images/hero.jpg'
     }
   return (
         <>

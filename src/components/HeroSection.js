@@ -5,7 +5,7 @@ import {Button} from '../styles/Button';
 // import { useProductContext } from '../context/Productcontext';
 
 const HeroSection = ({heroTitle}) => {
-    const{ name } = heroTitle;
+    const{ name, img } = heroTitle;
     // const myname = useProductContext();
 
     // console.log("myname:", myname)
@@ -14,7 +14,6 @@ const HeroSection = ({heroTitle}) => {
       <div className='container'>
         <div className='grid grid-two-column'>
             <div className='hero-section-data'>
-                <p className='intro-data'>Welcome To</p>
                 <h1>{ name }</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <NavLink to={'/shop'}>
@@ -25,7 +24,7 @@ const HeroSection = ({heroTitle}) => {
             <div className='hero-section-image'>
                 <figure>
                 <img
-                    src="images/hero.jpg"
+                    src={img}
                     alt="hero-section-photo"
                     className="img-style"
                 />
